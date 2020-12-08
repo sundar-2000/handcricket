@@ -329,7 +329,7 @@
   var pos = 0;
   var id = setInterval(frame, 5);
   function frame() {
-    if (pos == 50)
+    if (pos == 40)
     {
      setTimeout(function(){ elem.style.display="none"; }, 1000);
      setTimeout(function(){ document.getElementById('buttons').style.display='block'; }, 1000);
@@ -340,7 +340,7 @@
     {
       pos++;
 
-      elem.style.left = pos + "px";
+      elem.style.left = pos + "%";
     }
   }
 }
@@ -354,7 +354,7 @@
   var id = setInterval(frame, 5);
   function frame()
    {
-    if (pos == 50)
+    if (pos == 40)
     {
      setTimeout(function(){ elem.style.display="none"; }, 1000);
       clearInterval(id);
@@ -362,7 +362,7 @@
     {
       pos++;
 
-      elem.style.right = pos + "px";
+      elem.style.right = pos + "%";
     }
   }
 
